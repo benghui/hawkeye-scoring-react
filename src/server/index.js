@@ -1,19 +1,21 @@
 const express = require('express');
 const os = require('os');
-const db = require('./db');
-
+const methodOverride = require('method-override');
+const bodyParser = require('body-parser');
 const { resolve } = require('path');
+const db = require('./db');
 
 const app = express();
 
 app.use(express.static('dist'));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 require('./routes')(app, db);
 
 app.get('*', (req, res) => {
   res.sendFile(resolve(_dirname, '..', '..', 'public', 'index.html'));
 });
-// app.get('/api/getUsername', (req, res) => res.send({ username: os.userInfo().username }));
 
 /**
  * ===================================

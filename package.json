@@ -15,7 +15,9 @@
   "dependencies": {
     "@material-ui/core": "^3.5.1",
     "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "method-override": "^3.0.0",
     "pg": "^7.6.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
