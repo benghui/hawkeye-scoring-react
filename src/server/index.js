@@ -1,6 +1,7 @@
 const express = require('express');
 const os = require('os');
 const db = require('./db');
+
 const { resolve } = require('path');
 
 const app = express();
