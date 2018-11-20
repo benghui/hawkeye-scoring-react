@@ -5,11 +5,19 @@ import './display.css';
 class Display extends React.Component {
   constructor(props) {
     super(props);
+    this.props = {
+
+    };
+    this.setArrows = this.setArrows.bind(this)
+  }
+
+  setArrows(event) {
+      
   }
 
   render() {
     return (
-      <div>
+      <div onClick={this.setArrows}>
         <div className="six-ring" />
         <div className="seven-ring" />
         <div className="eight-ring" />

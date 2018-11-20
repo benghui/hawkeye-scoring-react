@@ -12,9 +12,9 @@ class Register extends React.Component {
 
   checkRegister(event) {
     event.preventDefault();
-    const username = event.target.childNode[1].value;
-    const password = event.target.childNode[2].value;
-    const email = event.target.childNode[0].value;
+    const username = event.target.childNodes[1].value;
+    const password = event.target.childNodes[2].value;
+    const email = event.target.childNodes[0].value;
     fetch('/api/checkRegister', {
       method: 'post',
       body: JSON.stringify({

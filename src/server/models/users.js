@@ -1,11 +1,12 @@
 module.exports = (dbPoolInstance) => {
   const checkLogin = (input, callback) => {
-    const queryString = `SELECT * FROM users WHERE username = '${input.username}' AND password = '${
+    const queryString = `SELECT * FROM users WHERE username = '${input.username}' AND pw_hash = '${
       input.password
     }'`;
 
     dbPoolInstance.query(queryString, (error, result) => {
       if (result.rows.length > 0) {
+        console.log("login: ", result.rows[0])
         callback(error, result.rows[0]);
       } else {
         callback(error, { wrong: 'wrongInput' });
@@ -31,7 +32,7 @@ module.exports = (dbPoolInstance) => {
             callback(error, { usernameExist: 'usernameExist' });
           }
         } else {
-          const query = 'INSERT INTO users (username, password, email) VALUES ($1, $2, $3) RETURNING id, username, email';
+          const query = 'INSERT INTO users (username, pw_hash, email) VALUES ($1, $2, $3) RETURNING id, username, email';
           const values = [input.username, input.password, input.email];
 
           dbPoolInstance.query(query, values, (error, result) => {
