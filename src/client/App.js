@@ -3,6 +3,7 @@ import { Route, Link, Switch } from 'react-router-dom';
 import Register from './components/user/register.js';
 import Login from './components/user/login.js';
 import Target from './components/target/target.js';
+import Trainings from './components/training/trainings.js';
 
 import './app.css';
 
@@ -21,10 +22,12 @@ export default class App extends React.Component {
         <br />
         <Link to="/target">Target</Link>
         <br />
+        <Link to="/trainings">Trainings</Link>
         <Switch>
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
           <Route path="/target" component={Target} />
+          <Route path="/trainings" component={Trainings} />
         </Switch>
       </div>
     );

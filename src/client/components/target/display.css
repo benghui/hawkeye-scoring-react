@@ -1,13 +1,38 @@
+#one {
+	top: 10px;
+	left: 10px;
+	position: relative;
+}
+
+#two {
+	top: 196;
+	left: 10;
+	position: relative;
+	color: red;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.spider {
+	position: relative;
+	top: 23.8%;
+	left: 2%;
+}
+
 .x-ring {
 	border-radius: 50%;
 	background-color: #FFE552;
-	height: 50px;
-	width: 50px;
-	margin: auto;
-	position: absolute;
-	z-index: 10;
-	transform: translate(25%, 25%);
+	height: 38px;
+	width: 38px;
+	position: relative;
+	top: 22.8%;
+	left: 22.8%;
 	border: 1px solid black;
+
 }
 
 .ten-ring {
@@ -15,18 +40,115 @@
 	background-color: #FFE552;
 	height: 75px;
 	width: 75px;
-	margin: auto;
-	position: absolute;
-	z-index: 9;
-
+	position: relative;
+	top: 15%;
+	left: 15%;
 	border: 1px solid black;
 }
 
 .nine-ring {
 	border-radius: 50%;
 	background-color: #FFE552;
-	height: 100px;
-	width: 100px;
-	margin: auto;
+	height: 110px;
+	width: 110px;
+	position: relative;
+	top: 11%;
+	left: 11%;
 	border: 1px solid black;
+}
+
+.eight-ring {
+	border-radius: 50%;
+	background-color: #F65058;
+	height: 145px;
+	width: 145px;
+	position: relative;
+	top: 9%;
+	left: 9%;
+	border: 1px solid black;
+}
+
+.seven-ring {
+	border-radius: 50%;
+	background-color: #F65058;
+	height: 180px;
+	width: 180px;
+	position: relative;
+	top: 8%;
+	left: 8%;
+
+}
+
+.six-ring {
+	border-radius: 50%;
+	background-color: #00B4E4;
+	height: 215px;
+	width: 215px;
+	position: relative;
+	top: 6.8%;
+	left: 6.8%;
+	border: 1px solid black;
+}
+
+.five-ring {
+	border-radius: 50%;
+	background-color: #00B4E4;
+	height: 250px;
+	width: 250px;
+	position: relative;
+	top: 6%;
+	left: 6%;
+	border: 1px solid black;
+}
+
+.four-ring {
+	border-radius: 50%;
+	background-color: #27251F;
+	height: 285px;
+	width: 285px;
+	position: relative;
+	top: 5.6%;
+	left: 5.6%;
+	border: 1px solid black;
+}
+
+.three-ring {
+	border-radius: 50%;
+	background-color: #27251F;
+	height: 320px;
+	width: 320px;
+	position: relative;
+	top: 4.75%;
+	left: 4.75%;
+	border: 1px solid black;
+}
+
+.two-ring {
+	border-radius: 50%;
+	height: 355px;
+	width: 355px;
+	position: relative;
+	top: 4.3%;
+	left: 4.3%;
+	border: 1px solid black;
+}
+
+.one-ring {
+	border-radius: 50%;
+	height: 390px;
+	width: 390px;
+	position: relative;
+	top: 2.2%;
+	left: 2.2%;
+	border: 1px solid black;
+}
+
+.miss-ring {
+	border-radius: 50%;
+	height: 410px;
+	width: 410px;
+	position: relative;
+	top: 0.8%;
+	left: 0.8%;
+
 }
